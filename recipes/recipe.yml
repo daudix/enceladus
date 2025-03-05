@@ -19,7 +19,6 @@ modules:
 
   - type: rpm-ostree
     install:
-      - android-tools
       - fish
       - gnome-backgrounds-extras
     remove:
