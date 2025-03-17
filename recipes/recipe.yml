@@ -22,6 +22,8 @@ modules:
       - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
     keys:
       - https://repo.vivaldi.com/archive/linux_signing_key.pub
+    optfix:
+      - vivaldi
     install:
       - vivaldi-stable
       - fish
