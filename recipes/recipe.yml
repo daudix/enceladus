@@ -20,6 +20,8 @@ modules:
   - type: rpm-ostree
     repos:
       - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
+    keys:
+      - https://repo.vivaldi.com/stable/linux_signing_key.pub
     install:
       - vivaldi-stable
       - fish
