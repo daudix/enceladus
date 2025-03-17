@@ -18,7 +18,10 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: rpm-ostree
+    repos:
+      - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
     install:
+      - vivaldi-stable
       - fish
       - gnome-backgrounds-extras
     remove:
@@ -33,7 +36,7 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
+        # - org.mozilla.firefox
         - org.gnome.Papers
       remove:
         - org.gnome.Evince
