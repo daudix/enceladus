@@ -4,12 +4,15 @@
 
 My personal flavor of [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/). It includes a small amount of chnages that I always do on my own system:
 
-- Installs [fish shell](https://fishshell.com)
-- Removes additional Fedora wallpapers
-- Installs additional GNOME wallpapers
 - Adds all neccesary media codecs and thumbnailers
+- Installs [fish shell](https://fishshell.com)
+- Installs additional GNOME wallpapers
+- Removes additional Fedora wallpapers
 - Removes Firefox RPM and installs Vivaldi RPM (and not Flatpak because of compatibility with KeePassXC)
 - Removes GNOME Classic session
+- Replaces Fedora Flatpaks with Flathub
+
+As this image is for personal use, I can't guarantee that its scope won't change, in fact it will quite often, as I change my own scope just as often.
 
 ## Installation
 
