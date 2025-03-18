@@ -51,15 +51,5 @@ modules:
         - com.mattjakeman.ExtensionManager
       remove:
         - org.gnome.Evince
-  - type: gnome-extensions
-    install:
-      - Night Theme Switcher
-      - Panel corners
-      - Rounded Window Corners Reborn
-      - Tiling Assistant
-      - Wiggle
-  - type: gschema-overrides
-    include:
-      - gnome-extensions.gschema.override
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
