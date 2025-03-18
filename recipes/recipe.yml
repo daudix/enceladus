@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: enceladus
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: My personal flavor of Fedora Silverblue.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
@@ -34,6 +34,12 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       - fedora-workstation-backgrounds
+      # Remove GNOME Classic session
+      - gnome-classic-session
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
