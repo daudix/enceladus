@@ -1,8 +1,15 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/daudix/enceladus/actions/workflows/build.yml/badge.svg)](https://github.com/daudix/enceladus/actions/workflows/build.yml)
+# Enceladus
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![enceladus build badge](https://github.com/daudix/enceladus/actions/workflows/build.yml/badge.svg)](https://github.com/daudix/enceladus/actions/workflows/build.yml)
 
-After setup, it is recommended you update this README to describe your custom image.
+My personal flavor of [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/). It includes a small amount of chnages that I always do on my own system:
+
+- Installs [fish shell](https://fishshell.com)
+- Removes additional Fedora wallpapers
+- Installs additional GNOME wallpapers
+- Adds all neccesary media codecs and thumbnailers
+- Removes Firefox RPM and installs Vivaldi RPM (and not Flatpak because of compatibility with KeePassXC)
+- Removes GNOME Classic session
 
 ## Installation
 
@@ -29,10 +36,6 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
-
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
 
