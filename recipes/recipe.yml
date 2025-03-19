@@ -35,6 +35,12 @@ modules:
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
+      # Remove some stuff from ublue-os/main
+      - adw-gtk3-theme
+      - distrobox
+      - gnome-tweaks
+      - htop
+      - nvtop
 
   - type: default-flatpaks
     system:
