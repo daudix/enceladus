@@ -25,6 +25,7 @@ modules:
       - gnome-backgrounds-extras
       - sushi
     remove:
+      - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
       - f41-backgrounds-gnome
       - firefox
