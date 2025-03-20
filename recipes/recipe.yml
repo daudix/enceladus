@@ -43,6 +43,7 @@ modules:
       - nvtop
 
   - type: default-flatpaks
+    notify: true
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
