@@ -31,14 +31,14 @@ modules:
       - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
       - f41-backgrounds-gnome
-      # - firefox
-      # - firefox-langpacks
+      - firefox
+      - firefox-langpacks
       # Remove GNOME Classic session
-      # - gnome-classic-session
-      # - gnome-shell-extension-apps-menu
-      # - gnome-shell-extension-launch-new-instance
-      # - gnome-shell-extension-places-menu
-      # - gnome-shell-extension-window-list
+      - gnome-classic-session
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
       # Remove some stuff from ublue-os/main
       - adw-gtk3-theme
       - distrobox
