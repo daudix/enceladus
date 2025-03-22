@@ -4,7 +4,7 @@ name: enceladus
 description: My personal flavor of Fedora Silverblue.
 
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41
+image-version: 42
 
 modules:
   - type: files
@@ -30,7 +30,7 @@ modules:
     remove:
       - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
-      - f41-backgrounds-gnome
+      - f42-backgrounds-gnome
       - firefox
       - firefox-langpacks
       # Remove GNOME Classic session
@@ -77,9 +77,5 @@ modules:
         - com.mattjakeman.ExtensionManager
       remove:
         - org.gnome.Evince
-
-  - type: script
-    snippets:
-      - "curl -L https://raw.githubusercontent.com/Figma-Linux/figma-linux-font-helper/master/res/install.sh | bash" # example: download binary
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
