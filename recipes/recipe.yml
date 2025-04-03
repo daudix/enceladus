@@ -28,6 +28,7 @@ modules:
       - gnome-backgrounds-extras
       - sushi
       - virt-manager
+      - libvirt-daemon
     remove:
       - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
