@@ -27,7 +27,6 @@ modules:
       - fish
       - gnome-backgrounds-extras
       - sushi
-      - libvirt
     remove:
       - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
