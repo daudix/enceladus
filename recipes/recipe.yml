@@ -12,6 +12,10 @@ modules:
       - source: system
         destination: /
 
+  - type: script
+    scripts:
+      - branding.sh
+
   - type: rpm-ostree
     repos:
       - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
@@ -77,6 +81,7 @@ modules:
         - com.mattjakeman.ExtensionManager
       remove:
         - org.gnome.Evince
+
   - type: bling
     install:
       - rpmfusion
