@@ -31,7 +31,16 @@ modules:
       - fish
       - gnome-backgrounds-extras
       - sushi
-      - libvirt
+      # @virtualization
+      - virt-install
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+      - qemu-kvm
+      - virt-manager
+      - virt-viewer
+      - guestfs-tools
+      - python3-libguestfs
+      - virt-top
     remove:
       - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
