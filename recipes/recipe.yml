@@ -26,18 +26,6 @@ modules:
       - fish
       - gnome-backgrounds-extras
       - sushi
-      - wine
-      - winetricks
-      # @virtualization
-      # - virt-install
-      # - libvirt-daemon-config-network
-      # - libvirt-daemon-kvm
-      # - qemu-kvm
-      # - virt-manager
-      # - virt-viewer
-      # - guestfs-tools
-      # - python3-libguestfs
-      # - virt-top
     remove:
       - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
@@ -89,9 +77,5 @@ modules:
       remove:
         - org.gnome.Evince
         - org.gnome.NautilusPreviewer
-
-  - type: bling
-    install:
-      - rpmfusion
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
