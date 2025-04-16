@@ -15,18 +15,16 @@ modules:
   - type: rpm-ostree
     repos:
       # - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
-      # - https://dl.google.com/linux/chrome/rpm/stable/x86_64
       - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
     keys:
       # - https://repo.vivaldi.com/archive/linux_signing_key.pub
-      # - https://dl.google.com/linux/linux_signing_key.pub
       - https://pkg.cloudflareclient.com/pubkey.gpg
     optfix:
       # - vivaldi
       - google
     install:
       # - vivaldi-stable
-      - chrome-stable
+      - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - cloudflare-warp
       - fish
       - gnome-backgrounds-extras
