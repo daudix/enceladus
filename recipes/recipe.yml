@@ -4,7 +4,7 @@ name: enceladus
 description: My personal flavor of Fedora Silverblue.
 
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41
+image-version: 42
 
 modules:
   - type: files
@@ -44,7 +44,7 @@ modules:
     remove:
       - fedora-workstation-backgrounds
       - desktop-backgrounds-gnome
-      - f41-backgrounds-gnome
+      - f42-backgrounds-gnome
       - firefox
       - firefox-langpacks
       # Remove GNOME Classic session
