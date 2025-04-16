@@ -31,6 +31,8 @@ modules:
       - fish
       - gnome-backgrounds-extras
       - sushi
+      - wine
+      - winetricks
       # @virtualization
       # - virt-install
       # - libvirt-daemon-config-network
