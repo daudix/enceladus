@@ -20,7 +20,7 @@ modules:
       # - https://repo.vivaldi.com/archive/linux_signing_key.pub
       - https://pkg.cloudflareclient.com/pubkey.gpg
     optfix:
-      - google/chrome
+      - google
     install:
       # - vivaldi-stable
       - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
