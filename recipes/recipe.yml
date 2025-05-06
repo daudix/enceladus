@@ -22,9 +22,7 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
-        - repo: cloudflare-warp
-          packages:
-            - cloudflare-warp
+        - cloudflare-warp
         - fish
         - gnome-backgrounds-extras
         - sushi
