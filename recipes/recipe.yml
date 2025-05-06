@@ -40,6 +40,7 @@ modules:
         - gnome-shell-extension-places-menu
         - gnome-shell-extension-window-list
         # Remove some stuff from ublue-os/main
+        - adw-gtk3
         - distrobox
         - htop
         - nvtop
