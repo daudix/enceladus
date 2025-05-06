@@ -12,40 +12,43 @@ modules:
       - source: system
         destination: /
 
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
-    keys:
-      - https://pkg.cloudflareclient.com/pubkey.gpg
-    optfix:
-      - google
+      cleanup: true
+      files:
+        - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+      keys:
+        - https://pkg.cloudflareclient.com/pubkey.gpg
+      nonfree: rpmfusion
     install:
-      - cloudflare-warp
-      - fish
-      - gnome-backgrounds-extras
-      - sushi
+      packages:
+        - repo: cloudflare-warp
+          packages:
+            - cloudflare-warp
+        - fish
+        - gnome-backgrounds-extras
+        - sushi
     remove:
-      - fedora-workstation-backgrounds
-      - desktop-backgrounds-gnome
-      - f42-backgrounds-gnome
-      - firefox
-      - firefox-langpacks
-      # Remove GNOME Classic session
-      - gnome-classic-session
-      - gnome-shell-extension-apps-menu
-      - gnome-shell-extension-launch-new-instance
-      - gnome-shell-extension-places-menu
-      - gnome-shell-extension-window-list
-      # Remove some stuff from ublue-os/main
-      - adw-gtk3-theme
-      - distrobox
-      - htop
-      - nvtop
+      packages:
+        - fedora-workstation-backgrounds
+        - desktop-backgrounds-gnome
+        - f42-backgrounds-gnome
+        - firefox
+        - firefox-langpacks
+        # Remove GNOME Classic session
+        - gnome-classic-session
+        - gnome-shell-extension-apps-menu
+        - gnome-shell-extension-launch-new-instance
+        - gnome-shell-extension-places-menu
+        - gnome-shell-extension-window-list
+        # Remove some stuff from ublue-os/main
+        - distrobox
+        - htop
+        - nvtop
 
   - type: default-flatpaks
     notify: true
     system:
-      # If no repo information is specified, Flathub will be used by default
       install:
         # Default GNOME apps
         - org.gnome.baobab
@@ -75,4 +78,4 @@ modules:
         - org.gnome.Evince
         - org.gnome.NautilusPreviewer
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: signing
