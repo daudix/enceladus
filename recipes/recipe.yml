@@ -11,8 +11,7 @@ modules:
     files:
       - source: system
         destination: /
-
-<<<<<<< HEAD
+        
   - type: dnf
     repos:
       cleanup: true
@@ -27,37 +26,10 @@ modules:
         - fish
         - gnome-backgrounds-extras
         - sushi
-=======
   - type: script
     scripts:
       - branding.sh
-
-  - type: rpm-ostree
-    repos:
-      - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
-      - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
-    keys:
-      - https://repo.vivaldi.com/archive/linux_signing_key.pub
-      - https://pkg.cloudflareclient.com/pubkey.gpg
-    optfix:
-      - vivaldi
-    install:
-      - vivaldi-stable
-      - cloudflare-warp
-      - fish
-      - gnome-backgrounds-extras
-      - sushi
-      # @virtualization
-      - virt-install
-      - libvirt-daemon-config-network
-      - libvirt-daemon-kvm
-      - qemu-kvm
-      - virt-manager
-      - virt-viewer
-      - guestfs-tools
-      - python3-libguestfs
-      - virt-top
->>>>>>> parent of 05b60ee (Remove branding, use chrome instead of vivaldi)
+  - type: dnf
     remove:
       packages:
         - fedora-workstation-backgrounds
@@ -107,5 +79,6 @@ modules:
         - com.mattjakeman.ExtensionManager
       remove:
         - org.gnome.Evince
-
+        - org.gnome.NautilusPreviewer
+        
   - type: signing
