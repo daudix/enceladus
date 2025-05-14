@@ -11,7 +11,7 @@ modules:
     files:
       - source: system
         destination: /
-
+        
   - type: dnf
     repos:
       cleanup: true
@@ -26,6 +26,10 @@ modules:
         - fish
         - gnome-backgrounds-extras
         - sushi
+  - type: script
+    scripts:
+      - branding.sh
+  - type: dnf
     remove:
       packages:
         - fedora-workstation-backgrounds
@@ -76,5 +80,5 @@ modules:
       remove:
         - org.gnome.Evince
         - org.gnome.NautilusPreviewer
-
+        
   - type: signing
