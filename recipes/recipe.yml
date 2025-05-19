@@ -11,7 +11,6 @@ modules:
     files:
       - source: system
         destination: /
-
   - type: dnf
     repos:
       cleanup: true
@@ -44,7 +43,6 @@ modules:
         - distrobox
         - htop
         - nvtop
-
   - type: default-flatpaks
     notify: true
     system:
@@ -76,5 +74,7 @@ modules:
       remove:
         - org.gnome.Evince
         - org.gnome.NautilusPreviewer
-
+  - type: script
+    scripts:
+      - branding.sh
   - type: signing
