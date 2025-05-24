@@ -21,6 +21,7 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
+        - broadcom-wl
         - cloudflare-warp
         - fish
         - gnome-backgrounds-extras
