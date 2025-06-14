@@ -25,6 +25,7 @@ modules:
         - cloudflare-warp
         - fish
         - gnome-backgrounds-extras
+        - gnome-shell-extension-background-logo
         - sushi
     remove:
       packages:
