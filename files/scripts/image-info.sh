@@ -16,20 +16,6 @@ BUG_SUPPORT_URL="https://github.com/daudix/enceladus/issues/"
 CODE_NAME="Lyra"
 VERSION="${VERSION:-00.00000000}"
 
-IMAGE_INFO="/usr/share/ublue-os/image-info.json"
-IMAGE_REF="ostree-image-signed:docker://ghcr.io/$IMAGE_VENDOR/$IMAGE_NAME"
-
-cat >$IMAGE_INFO <<EOF
-{
-  "image-name": "$IMAGE_NAME",
-  "image-vendor": "$IMAGE_VENDOR",
-  "image-ref": "$IMAGE_REF",
-  "image-tag":"$UBLUE_IMAGE_TAG",
-  "base-image-name": "$BASE_IMAGE_NAME",
-  "fedora-version": "$FEDORA_MAJOR_VERSION"
-}
-EOF
-
 # OS Release File
 sed -i "s|^VARIANT_ID=.*|VARIANT_ID=$IMAGE_NAME|" /usr/lib/os-release
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"${IMAGE_PRETTY_NAME} ${CODE_NAME}\"|" /usr/lib/os-release
