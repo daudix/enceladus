@@ -6,6 +6,7 @@ set -ouex pipefail
 
 source /usr/lib/os-release || false
 
+IMAGE_VENDOR="daudix"
 IMAGE_PRETTY_NAME="Enceladus"
 IMAGE_LIKE="fedora"
 HOME_URL="https://github.com/daudix/enceladus"
