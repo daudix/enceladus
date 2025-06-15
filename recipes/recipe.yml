@@ -78,5 +78,5 @@ modules:
         - org.gnome.NautilusPreviewer
   - type: script
     scripts:
-      - branding.sh
+      - image-info.sh
   - type: signing
