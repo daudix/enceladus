@@ -22,7 +22,6 @@ IMAGE_REF="ostree-image-signed:docker://ghcr.io/$IMAGE_VENDOR/$IMAGE_NAME"
 cat >$IMAGE_INFO <<EOF
 {
   "image-name": "$IMAGE_NAME",
-  "image-flavor": "$image_flavor",
   "image-vendor": "$IMAGE_VENDOR",
   "image-ref": "$IMAGE_REF",
   "image-tag":"$UBLUE_IMAGE_TAG",
