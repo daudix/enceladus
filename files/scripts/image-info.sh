@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # Taken from Bluefin: https://github.com/ublue-os/bluefin/blob/6c348bd54eca6949d07d8f310cb1ded53d4943ed/build_files/base/00-image-info.sh
+# Before that, from TyrianOS: https://github.com/Icycoide/TyrianOS/blob/54d1df9ad43f7a27ba7c7cb4639b8ac6459052f0/build_files/branding.sh
 
 set -ouex pipefail
+
+source /usr/lib/os-release || false
 
 IMAGE_PRETTY_NAME="Enceladus"
 IMAGE_LIKE="fedora"
