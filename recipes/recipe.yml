@@ -26,6 +26,7 @@ modules:
         - fish
         - gnome-backgrounds-extras
         - sushi
+        - VirtualBox
     remove:
       packages:
         - fedora-workstation-backgrounds
