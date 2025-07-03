@@ -19,6 +19,8 @@ modules:
       keys:
         - https://pkg.cloudflareclient.com/pubkey.gpg
       nonfree: rpmfusion
+      copr:
+      - yalter/niri-git
     install:
       packages:
         - broadcom-wl
@@ -26,6 +28,15 @@ modules:
         - fish
         - gnome-backgrounds-extras
         - sushi
+        # Niri stuff
+        - mako
+        - xdg-desktop-portal-gtk
+        - xdg-desktop-portal-gnome
+        - gnome-keyring
+        - xwayland-satellite
+        - repo: copr:copr.fedorainfracloud.org:yalter:niri-git
+          packages:
+            - niri
     remove:
       packages:
         - fedora-workstation-backgrounds
