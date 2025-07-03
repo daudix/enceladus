@@ -16,7 +16,8 @@ modules:
       cleanup: true
       files:
         - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+      keys:
+        - https://pkg.cloudflareclient.com/pubkey.gpg
       nonfree: rpmfusion
     install:
       packages:
@@ -30,11 +31,7 @@ modules:
         - mako
         - swaybg
         - swayidle
-        - xdg-desktop-portal-gtk
-        - xdg-desktop-portal-gnome
-        - gnome-keyring
         - xwayland-satellite
-        - hyprlock
     remove:
       packages:
         - fedora-workstation-backgrounds
