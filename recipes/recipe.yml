@@ -31,6 +31,8 @@ modules:
         # Niri stuff
         - niri
         - mako
+        - swaybg
+        - swayidle
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - gnome-keyring
