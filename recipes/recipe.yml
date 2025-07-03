@@ -16,8 +16,7 @@ modules:
       cleanup: true
       files:
         - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
-      keys:
-        - https://pkg.cloudflareclient.com/pubkey.gpg
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       nonfree: rpmfusion
     install:
       packages:
