@@ -27,8 +27,10 @@ modules:
         - gnome-backgrounds-extras
         - sushi
         # Niri stuff
-        - niri
+        - blueman-applet
         - mako
+        - network-manager-applet
+        - niri
         - swaybg
         - swayidle
         - xwayland-satellite
