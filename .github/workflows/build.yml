@@ -27,8 +27,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - desktop.yml
-          - server.yml
+          - latte.yml
+          - espresso.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image

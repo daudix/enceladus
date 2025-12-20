@@ -27,11 +27,16 @@ As these images are for personal use, I can't guarantee that their scope won't c
 > [!WARNING]  
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
-To rebase an existing atomic Fedora installation to the latest build:
+Enceladus has two variants:
+
+ - `latte` - Silverblue-based image (alternatively `desktop`)
+ - `espresso` - uCore-based image (alternatively `server`)
+
+To rebase an existing atomic Fedora installation to the latest build of select variant:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/daudix/enceladus:<desktop/server>
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/daudix/enceladus:<VARIANT>
   ```
 - Reboot to complete the rebase:
   ```
@@ -39,7 +44,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/daudix/enceladus:<desktop/server>
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/daudix/enceladus:<VARIANT>
   ```
 - Reboot again to complete the installation
   ```

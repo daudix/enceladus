@@ -4,6 +4,7 @@ name: enceladus
 description: My personal flavor of Fedora Silverblue.
 
 alt-tags:
+  - latte
   - desktop
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43

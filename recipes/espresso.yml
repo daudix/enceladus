@@ -4,6 +4,7 @@ name: enceladus
 description: My personal modification of uCore.
 
 alt-tags:
+  - espresso
   - server
 base-image: ghcr.io/ublue-os/ucore-minimal
 image-version: stable
