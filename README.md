@@ -2,7 +2,7 @@
 
 [![enceladus build badge](https://github.com/daudix/enceladus/actions/workflows/build.yml/badge.svg)](https://github.com/daudix/enceladus/actions/workflows/build.yml)
 
-My personal flavor of [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/) and [uCore](https://github.com/ublue-os/ucore). It includes a small amount of chnages that I always do on my own systems:
+My personal flavors of [Fedora Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/) and [uCore](https://github.com/ublue-os/ucore). They includes a small amount of chnages that I always do on my own systems:
 
 - Both
   - Installs [1.1.1.1](https://one.one.one.one)
@@ -31,7 +31,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/daudix/enceladus:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/daudix/enceladus:<desktop/server>
   ```
 - Reboot to complete the rebase:
   ```
@@ -39,7 +39,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/daudix/enceladus:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/daudix/enceladus:<desktop/server>
   ```
 - Reboot again to complete the installation
   ```
