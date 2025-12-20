@@ -1,8 +1,10 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: silverblue
+name: enceladus
 description: My personal flavor of Fedora Silverblue.
 
+alt-tags:
+  - silverblue
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43
 
@@ -37,7 +39,7 @@ modules:
         - distrobox
         - htop
         - nvtop
-  - type: default-flatpaks
+  - type: default-flatpaks@v1
     notify: true
     system:
       install:

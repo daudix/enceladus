@@ -20,7 +20,7 @@ My personal flavor of [Fedora Silverblue](https://fedoraproject.org/atomic-deskt
   - Replaces Moby Docker with Docker-CE
   - Installs [TuneD](https://tuned-project.org)
 
-As this image is for personal use, I can't guarantee that its scope won't change, in fact it will quite often, as I change my own scope just as often.
+As these images are for personal use, I can't guarantee that their scope won't change, in fact it *will* quite often, as I change my own scope just as often.
 
 ## Installation
 

@@ -1,8 +1,10 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: ucore
+name: enceladus
 description: My personal modification of uCore.
 
+alt-tags:
+  - ucore
 base-image: ghcr.io/ublue-os/ucore-minimal
 image-version: stable
 
