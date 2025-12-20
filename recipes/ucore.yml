@@ -1,0 +1,57 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+name: ucore
+description: My personal modification of uCore.
+
+base-image: ghcr.io/ublue-os/ucore-minimal
+image-version: stable
+
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+        - https://download.docker.com/linux/fedora/docker-ce.repo
+      keys:
+        - https://pkg.cloudflareclient.com/pubkey.gpg
+        - https://download.docker.com/linux/fedora/gpg
+    install:
+      packages:
+        - cloudflare-warp
+        - docker-ce
+        - tuned
+        # uCore packages from normal edition, without all the bloat
+        - cockpit-storaged
+        - hdparm
+        - man-db
+        - nfs-utils
+        - pciutils
+        - pcp-zeroconf
+        - rclone
+        - smartctl
+        - usbutils
+        - xdg-dbus-proxy
+        - xdg-user-dirs
+        # uCore HCI
+        # - cockpit-machines
+        # - libvirt-client
+        # - libvirt-daemon-kvm
+        # - ublue-os-libvirt-workarounds
+        # - virt-install
+    remove:
+      packages:
+        # CoreOS packages
+        - moby-engine
+        - containerd
+        - runc
+        - docker-cli
+        - nfs-utils-coreos
+        # uCore packages
+        - docker-buildx
+        - docker-compose
+        - podman-compose
+        - tailscale
+        # - wireguard-tools
+
+  - type: signing

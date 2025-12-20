@@ -1,16 +1,12 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: enceladus
+name: silverblue
 description: My personal flavor of Fedora Silverblue.
 
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42
+image-version: 43
 
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: /
   - type: dnf
     repos:
       cleanup: true
@@ -21,24 +17,12 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
-        - broadcom-wl
         - cloudflare-warp
         - fish
-        - gnome-backgrounds-extras
         - sushi
-        # Niri stuff
-        - blueman-applet
-        - mako
-        - network-manager-applet
-        - niri
-        - swaybg
-        - swayidle
-        - xwayland-satellite
     remove:
       packages:
         - fedora-workstation-backgrounds
-        - desktop-backgrounds-gnome
-        - f42-backgrounds-gnome
         - firefox
         - firefox-langpacks
         # Remove GNOME Classic session
@@ -62,10 +46,10 @@ modules:
         - org.gnome.Calculator
         - org.gnome.Calendar
         - org.gnome.Characters
-        - org.gnome.Decibels # incubator app
+        - org.gnome.Decibels
         - org.gnome.Epiphany
         - org.gnome.Extensions
-        - org.gnome.Showtime # incubator app
+        - org.gnome.Showtime
         - org.gnome.Snapshot
         - org.gnome.clocks
         - org.gnome.Connections
@@ -77,14 +61,10 @@ modules:
         - org.gnome.Logs
         - org.gnome.Maps
         - org.gnome.Music
-        - org.gnome.Papers # incubator app
+        - org.gnome.Papers
         - org.gnome.Weather
         # Extra
         - com.mattjakeman.ExtensionManager
       remove:
-        - org.gnome.Evince
         - org.gnome.NautilusPreviewer
-  - type: script
-    scripts:
-      - image-info.sh
   - type: signing
