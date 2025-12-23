@@ -23,6 +23,7 @@ modules:
         - cloudflare-warp
         - fish
         - sushi
+        - VirtualBox
     remove:
       packages:
         - fedora-workstation-backgrounds
