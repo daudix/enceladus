@@ -20,7 +20,7 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
-        - broadcom-wl
+        # - broadcom-wl
         - cloudflare-warp
         - fish
         - sushi
