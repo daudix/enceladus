@@ -20,10 +20,10 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
+        - broadcom-wl
         - cloudflare-warp
         - fish
         - sushi
-        - VirtualBox
     remove:
       packages:
         - fedora-workstation-backgrounds
