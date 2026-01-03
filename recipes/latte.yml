@@ -18,8 +18,10 @@ modules:
       cleanup: true
       files:
         - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+        - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f43/rpmfusion-nonfree-tainted.repo
       keys:
         - https://pkg.cloudflareclient.com/pubkey.gpg
+        - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f43/RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
       nonfree: rpmfusion
     install:
       packages:
