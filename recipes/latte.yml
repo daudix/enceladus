@@ -23,6 +23,7 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
+        - broadcom-bt-firmware
         - cloudflare-warp
         - fish
         - sushi
