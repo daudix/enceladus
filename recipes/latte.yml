@@ -10,6 +10,9 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43
 
 modules:
+  - type: akmods
+    install:
+      - wl
   - type: dnf
     repos:
       cleanup: true
@@ -20,7 +23,6 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
-        # - broadcom-wl
         - cloudflare-warp
         - fish
         - sushi
