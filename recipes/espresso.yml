@@ -21,6 +21,7 @@ modules:
         - https://download.docker.com/linux/fedora/gpg
     install:
       packages:
+        - beep
         - cloudflare-warp
         - docker-ce
         - tuned
