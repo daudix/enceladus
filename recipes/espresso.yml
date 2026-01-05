@@ -25,9 +25,9 @@ modules:
         - cloudflare-warp
         - docker-ce
         # NVIDIA
-        - xorg-x11-drv-nvidia-340xx
-        - akmod-nvidia-340xx
-        # - xorg-x11-drv-nvidia-340xx-cuda
+        - xorg-x11-drv-nvidia-390xx
+        - akmod-nvidia-390xx
+        # - xorg-x11-drv-nvidia-390xx-cuda
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
         - duperemove
