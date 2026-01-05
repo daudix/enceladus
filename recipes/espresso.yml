@@ -24,16 +24,19 @@ modules:
         - beep
         - cloudflare-warp
         - docker-ce
-        - tuned
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
+        - duperemove
         - hdparm
         - man-db
-        - nfs-utils
         - pciutils
         - pcp-zeroconf
         - rclone
+        - samba
+        - samba-usershares
+        - sanoid
         - smartctl
+        - snapraid
         - usbutils
         - xdg-dbus-proxy
         - xdg-user-dirs
