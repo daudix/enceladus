@@ -23,11 +23,15 @@ modules:
       packages:
         - beep
         - cloudflare-warp
-        - docker-ce
+        - cups
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
         - duperemove
+        - hdparm
         - man-db
+        - mt7xxx-firmware
+        - nxpwireless-firmware
+        - pciutils
         - pcp-zeroconf
         - rclone
         - samba
@@ -38,25 +42,15 @@ modules:
         - usbutils
         - xdg-dbus-proxy
         - xdg-user-dirs
-        # uCore HCI
-        # - cockpit-machines
-        # - libvirt-client
-        # - libvirt-daemon-kvm
-        # - ublue-os-libvirt-workarounds
-        # - virt-install
     remove:
       packages:
         # CoreOS packages
-        - moby-engine
-        - containerd
-        - runc
-        - docker-cli
         - nfs-utils-coreos
         # uCore packages
         - docker-buildx
         - docker-compose
+        - open-vm-tools
         - podman-compose
+        - qemu-guest-agent
         - tailscale
-        # - wireguard-tools
-
   - type: signing
