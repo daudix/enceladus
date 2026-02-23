@@ -24,6 +24,7 @@ modules:
         - beep
         - cloudflare-warp
         - cups
+        - foomatic
         - gutenprint-cups
         - hplip
         - lm_sensors
