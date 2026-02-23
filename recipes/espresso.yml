@@ -25,6 +25,7 @@ modules:
         - cloudflare-warp
         - cups
         - gutenprint-cups
+        - hplip
         - lm_sensors
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
