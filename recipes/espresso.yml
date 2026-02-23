@@ -30,8 +30,6 @@ modules:
         - duperemove
         - hdparm
         - man-db
-        - mt7xxx-firmware
-        - nxpwireless-firmware
         - pciutils
         - pcp-zeroconf
         - rclone
