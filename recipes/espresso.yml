@@ -24,6 +24,7 @@ modules:
         - beep
         - cloudflare-warp
         - cups
+        - gutenprint-cups
         - lm_sensors
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
