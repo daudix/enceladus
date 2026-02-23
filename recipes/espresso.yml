@@ -25,6 +25,7 @@ modules:
         - cloudflare-warp
         - cups
         - foomatic
+        - ghostscript
         - gutenprint-cups
         - hplip
         - lm_sensors
