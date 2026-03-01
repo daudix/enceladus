@@ -11,15 +11,13 @@ image-version: stable
 
 modules:
   - type: dnf
+    group-install:
+      with-optional: true
+      packages:
+        - printing
     install:
       packages:
         - beep
-        - cups
-        - cups-filters
-        - foomatic
-        - ghostscript
-        - gutenprint-cups
-        - hplip
         - lm_sensors
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
