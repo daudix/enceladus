@@ -11,18 +11,9 @@ image-version: stable
 
 modules:
   - type: dnf
-    repos:
-      cleanup: true
-      files:
-        - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
-        - https://download.docker.com/linux/fedora/docker-ce.repo
-      keys:
-        - https://pkg.cloudflareclient.com/pubkey.gpg
-        - https://download.docker.com/linux/fedora/gpg
     install:
       packages:
         - beep
-        - cloudflare-warp
         - cups
         - cups-filters
         - foomatic
