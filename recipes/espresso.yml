@@ -18,6 +18,7 @@ modules:
     install:
       packages:
         - beep
+        - kernel-modules-extra
         - lm_sensors
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
