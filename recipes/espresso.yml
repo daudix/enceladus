@@ -75,8 +75,8 @@ modules:
         # - tmux
         # - wireguard-tools
     replace:
-      # - from-repo: repo-1
-      packages:
+      - from-repo: updates
+        packages:
         - old: nfs-utils
           new: nfs-utils-coreos
   - type: signing
