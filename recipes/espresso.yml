@@ -28,55 +28,29 @@ modules:
         - lm_sensors
         - nouveau-firmware
         # uCore packages from normal edition, without all the bloat
-        # - NetworkManager-wifi
-        # - atheros-firmware
-        # - brcmfmac-firmware
         - cockpit-storaged
-        # - distrobox
         - duperemove
-        - hdparm
-        # - iwlegacy-firmware
-        # - iwlwifi-dvm-firmware
-        # - iwlwifi-mvm-firmware
         - man-db
-        # - mt7xxx-firmware
-        # - nxpwireless-firmware
-        - pciutils
         - pcp-zeroconf
         - rclone
-        # - realtek-firmware
         - samba
         - samba-usershares
         - smartctl
         - snapraid
-        # - tiwilink-firmware
-        - usbutils
         - xdg-dbus-proxy
         - xdg-user-dirs
     remove:
       packages:
         # uCore packages from minimal edition
-        # - bootc
-        # - cockpit-files
-        # - cockpit-networkmanager
-        # - cockpit-podman
-        # - cockpit-selinux
-        # - cockpit-system
         - docker-buildx
         - docker-compose
-        # - firewalld
-        # - fwupd-efi
         - open-vm-tools
-        # - podman
         - podman-compose
-        # - pv
         - qemu-guest-agent
         - tailscale
-        # - tmux
-        # - wireguard-tools
-    replace:
-      - from-repo: updates
-        packages:
-        - old: nfs-utils
-          new: nfs-utils-coreos
+    # replace:
+    #   - from-repo: updates
+    #     packages:
+    #     - old: nfs-utils
+    #       new: nfs-utils-coreos
   - type: signing
