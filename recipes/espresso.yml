@@ -11,6 +11,13 @@ image-version: stable
 
 modules:
   - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f43/rpmfusion-nonfree-tainted.repo
+      keys:
+        - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f43/RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+      nonfree: rpmfusion
     group-install:
       with-optional: true
       packages:
@@ -19,6 +26,7 @@ modules:
       packages:
         - beep
         - lm_sensors
+        - nouveau-firmware
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
         - duperemove
