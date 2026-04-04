@@ -25,6 +25,7 @@ modules:
     install:
       packages:
         - beep
+        - libva-utils
         - lm_sensors
         - nouveau-firmware
         # uCore packages from normal edition, without all the bloat
