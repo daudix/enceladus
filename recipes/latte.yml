@@ -31,6 +31,7 @@ modules:
         - fedora-workstation-backgrounds
         - firefox
         - firefox-langpacks
+        - gnome-software
         # Remove GNOME Classic session
         - gnome-classic-session
         - gnome-shell-extension-apps-menu
@@ -72,6 +73,7 @@ modules:
         - org.gnome.Weather
         # Extra
         - com.mattjakeman.ExtensionManager
+        - io.github.kolunmi.Bazaar
       remove:
         - org.gnome.NautilusPreviewer
   - type: signing
