@@ -25,9 +25,11 @@ modules:
     install:
       packages:
         - beep
+        - htop
         - libva-utils
         - lm_sensors
         - nouveau-firmware
+        - nvtop
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
         - duperemove
