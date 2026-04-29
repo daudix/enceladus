@@ -42,8 +42,6 @@ modules:
         # Remove some stuff from ublue-os/main
         - adw-gtk3-theme
         - distrobox
-        - htop
-        - nvtop
   - type: default-flatpaks@v1
     notify: true
     system:
