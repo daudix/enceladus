@@ -25,6 +25,7 @@ modules:
     install:
       packages:
         - beep
+        - hplip
         - htop
         - libva-utils
         - lm_sensors
