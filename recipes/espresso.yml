@@ -26,21 +26,16 @@ modules:
       packages:
         - beep
         - borgmatic
-        - htop
         - libva-utils
         - lm_sensors
         - nouveau-firmware
-        - nvtop
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
         - duperemove
         - man-db
         - pcp-zeroconf
         - rclone
-        - samba
-        - samba-usershares
         - smartctl
-        - snapraid
         - xdg-dbus-proxy
         - xdg-user-dirs
     remove:
