@@ -28,7 +28,7 @@ modules:
       packages:
         - beep
         - borgmatic
-        - cloudflare-warp
+        - cloudflare-warp-2026.3.846.0-1.x86_64
         - libva-utils
         - lm_sensors
         - nouveau-firmware
