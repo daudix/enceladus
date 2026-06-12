@@ -26,7 +26,7 @@ modules:
     install:
       packages:
         - broadcom-bt-firmware
-        - cloudflare-warp
+        - cloudflare-warp-2026.3.846.0-1.x86_64
         - fish
         - sushi
     remove:
