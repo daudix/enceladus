@@ -14,10 +14,10 @@ modules:
     repos:
       cleanup: true
       files:
-        - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+        # - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
         - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f44/rpmfusion-nonfree-tainted.repo
       keys:
-        - https://pkg.cloudflareclient.com/pubkey.gpg
+        # - https://pkg.cloudflareclient.com/pubkey.gpg
         - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f44/RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
       nonfree: rpmfusion
     group-install:
@@ -28,7 +28,7 @@ modules:
       packages:
         - beep
         - borgmatic
-        - cloudflare-warp-2026.3.846.0-1.x86_64
+        # - cloudflare-warp
         - libva-utils
         - lm_sensors
         - nouveau-firmware
