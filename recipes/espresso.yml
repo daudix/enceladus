@@ -35,6 +35,7 @@ modules:
         # uCore packages from normal edition, without all the bloat
         - cockpit-storaged
         - duperemove
+        - fish
         - man-db
         - pcp-zeroconf
         - rclone
