@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: maxwell
+name: enceladus
 description: My personal modification of uCore.
 
 alt-tags:
