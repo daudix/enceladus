@@ -1,0 +1,29 @@
+modules:
+  - type: dnf
+    install:
+      packages:
+        # uCore packages from normal edition, without all the bloat
+        - cockpit-storaged
+        - duperemove
+        - fish
+        - man-db
+        - pcp-zeroconf
+        - rclone
+        - smartctl
+        - xdg-dbus-proxy
+        - xdg-user-dirs
+    remove:
+      packages:
+        # uCore packages from minimal edition
+        - docker-buildx
+        - docker-compose
+        - open-vm-tools
+        - podman-compose
+        - qemu-guest-agent
+        - tailscale
+    # replace:
+    #   - from-repo: updates
+    #     packages:
+    #     - old: nfs-utils
+    #       new: nfs-utils-coreos
+  - type: signing

@@ -14,10 +14,8 @@ modules:
     repos:
       cleanup: true
       files:
-        - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
         - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f44/rpmfusion-nonfree-tainted.repo
       keys:
-        - https://pkg.cloudflareclient.com/pubkey.gpg
         - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/f44/RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
       nonfree: rpmfusion
     group-install:
@@ -32,28 +30,4 @@ modules:
         - libva-utils
         - lm_sensors
         - nouveau-firmware
-        # uCore packages from normal edition, without all the bloat
-        - cockpit-storaged
-        - duperemove
-        - fish
-        - man-db
-        - pcp-zeroconf
-        - rclone
-        - smartctl
-        - xdg-dbus-proxy
-        - xdg-user-dirs
-    remove:
-      packages:
-        # uCore packages from minimal edition
-        - docker-buildx
-        - docker-compose
-        - open-vm-tools
-        - podman-compose
-        - qemu-guest-agent
-        - tailscale
-    # replace:
-    #   - from-repo: updates
-    #     packages:
-    #     - old: nfs-utils
-    #       new: nfs-utils-coreos
   - type: signing

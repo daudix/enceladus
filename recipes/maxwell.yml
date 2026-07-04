@@ -1,0 +1,21 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+name: maxwell
+description: My personal modification of uCore.
+
+alt-tags:
+  - maxwell
+  - vps
+base-image: ghcr.io/ublue-os/ucore-minimal
+image-version: stable
+
+modules:
+  # - type: dnf
+  #   install:
+  #     packages:
+  #       # ...
+  #   remove:
+  #     packages:
+  #       # ...
+  - type: signing
+  - from-file: server-common.yml
