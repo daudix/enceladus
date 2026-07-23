@@ -10,12 +10,12 @@ base-image: ghcr.io/ublue-os/ucore-minimal
 image-version: stable
 
 modules:
-  # - type: dnf
-  #   install:
-  #     packages:
-  #       # ...
-  #   remove:
-  #     packages:
-  #       # ...
+  - type: dnf
+    install:
+      packages:
+        - qemu-guest-agent
+    # remove:
+    #   packages:
+    #     - ...
   - type: signing
   - from-file: server-common.yml
