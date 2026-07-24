@@ -26,4 +26,3 @@ modules:
     #     packages:
     #     - old: nfs-utils
     #       new: nfs-utils-coreos
-  - type: signing
