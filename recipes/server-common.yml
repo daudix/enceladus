@@ -19,7 +19,7 @@ modules:
         - docker-compose
         - open-vm-tools
         - podman-compose
-        - qemu-guest-agent
+        # - qemu-guest-agent
         - tailscale
     # replace:
     #   - from-repo: updates
