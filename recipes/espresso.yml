@@ -30,3 +30,4 @@ modules:
         - lm_sensors
         - nouveau-firmware
   - type: signing
+  - from-file: server-common.yml
