@@ -7,7 +7,7 @@ alt-tags:
   - maxwell
   - vps
 base-image: ghcr.io/ublue-os/ucore-minimal
-image-version: stable
+image-version: testing
 
 modules:
   - type: dnf
