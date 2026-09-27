@@ -31,7 +31,6 @@ modules:
         - fedora-workstation-backgrounds
         - firefox
         - firefox-langpacks
-        - gnome-software
         # ======================================================================
         # Remove GNOME Classic session
         # ======================================================================
