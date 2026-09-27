@@ -31,22 +31,28 @@ modules:
         - fedora-workstation-backgrounds
         - firefox
         - firefox-langpacks
-        # - gnome-software
+        - gnome-software
+        # ======================================================================
         # Remove GNOME Classic session
+        # ======================================================================
         - gnome-classic-session
         - gnome-shell-extension-apps-menu
         - gnome-shell-extension-background-logo
         - gnome-shell-extension-launch-new-instance
         - gnome-shell-extension-places-menu
         - gnome-shell-extension-window-list
+        # ======================================================================
         # Remove some stuff from ublue-os/main
+        # ======================================================================
         - adw-gtk3-theme
         - distrobox
   - type: default-flatpaks@v1
     notify: true
     system:
       install:
+        # ======================================================================
         # Default GNOME apps
+        # ======================================================================
         - org.gnome.baobab
         - org.gnome.Calculator
         - org.gnome.Calendar
@@ -69,7 +75,9 @@ modules:
         - org.gnome.Snapshot
         - org.gnome.TextEditor
         - org.gnome.Weather
+        # ======================================================================
         # Extra
+        # ======================================================================
         - com.mattjakeman.ExtensionManager
         - io.github.kolunmi.Bazaar
       remove:

@@ -25,7 +25,6 @@ modules:
     install:
       packages:
         - beep
-        - borgmatic
         - libva-utils
         - lm_sensors
         - nouveau-firmware
