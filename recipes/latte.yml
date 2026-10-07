@@ -25,6 +25,7 @@ modules:
       packages:
         - broadcom-bt-firmware
         - fish
+        - sshfs
         - sushi
     remove:
       packages:
