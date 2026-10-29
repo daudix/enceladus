@@ -28,5 +28,6 @@ modules:
         - libva-utils
         - lm_sensors
         - nouveau-firmware
+        - udisks2
   - type: signing
   - from-file: server-common.yml
